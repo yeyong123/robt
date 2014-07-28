@@ -1,0 +1,26 @@
+.home {
+	width: 100%;
+	height: auto;
+	border: 1px solid #fff;
+	.header-top {
+		width: 100%;
+		height: 50px;
+		border: 1px solid #909090;
+		background: blue;
+	}
+	.content {
+		clear: both;
+		width: 100%;
+		margin: 5px 0;
+		height: 50px;
+		border: 1px solid red;
+		background: yellow;
+	}
+	.bottomer {
+		clear: both;
+		width: 100%;
+		height: 50px;
+		border: 1px solid yellow;
+		background: red;
+	}
+}
