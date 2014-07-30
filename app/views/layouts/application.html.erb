@@ -7,8 +7,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<ul class="top-baner">
+	<li><%= link_to t('.home'), '/' %></li>
+	<li><%= link_to t('.products'), "#" %></li>
+	<li><%= link_to t('.server'), "#" %></li>
+	<li><%= link_to t('.about'), "#" %></li>
+	<li>
+	<form class="form-search">
+		<input type="text" class="search-query"/>
+		<button type="submit" class="btn"><i class="icon-search"></i>搜索</button>
+	</form>
+		</li>
+</ul>
+<div class="view-content">
 <%= yield %>
-
+</div>
+<div class="footer">
+	<div class="copy-right">
+		<span>&copy; <%= Time.now.strftime("%Y") %>上海罗倍拓工业设备有限公司 版权所有</span>
+	<br>
+	<span>沪ICP备11004282号</span>
+</div>
+</div>
 </body>
 </html>

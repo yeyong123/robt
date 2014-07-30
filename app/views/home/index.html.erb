@@ -1,7 +1,84 @@
 <div class="home">
 <div class="header-top">
+	<div id="myCarousel" class="carousel slide">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<%=image_tag "1.jpg" %>
+			</div>
+			<div class="item">
+				<%=image_tag "2.jpg" %>
+			</div>
+			<div class="item">
+				<%=image_tag "3.jpg" %>
+			</div>
+		</div>
+	</div>
+	<div class="login-interface">
+		<h2>用户登录</h2>
+		<form>
+			<label>用户名:</label>
+			<input type='text'/>
+			<label>密码:</label>
+			<input type="password" />
+		</form>
+		<div class="login-btn">
+		<input type="submit" class="btn btn-primary" name="commit" value="登录"/>
+		<input type="submit" class="btn btn-success" value="注册" />
+	</div>
+	</div>
 </div>
 <div class="content">
+	<ul>
+		<div class="top-list">
+			<li><%= image_tag "image-ico/banyun.png" %>
+		<h3>我们在做什么</h3><hr>
+		<div class="context">
+			随着全球性物流配送的趋势日益增强，中国企业对物料搬运的要求日益提高，根据客户要求量身定制的、全面的解决方案取代了传统的物料搬运方式。针对这一趋势，上海罗倍拓工业设备有限公司将目标瞄准中国市场，并立志用现代化的物流搬运整体解决方案和完善的售后服务支持，赢得工业企业的认可，不断提升研发和技术力量，根据本土用户需求，不断开发新的产品和将原有产品升级，把ROBT打造成为高端MRO的佼佼者。
+         •  中国总部位于上海国家级开发区。
+         •  OEM生产基地、遍及长江三角洲。
+         •  将国际化设计和品质、本地化技术支持与生产、行业经验和业务实践成功结合。
+				</div>
+		</li>
+			<li><%= image_tag "image-ico/server.png" %>
+		<h3>我们提供的服务</h3><hr>
+		<div class="context">
+			罗倍拓所面向的所有终端客户在服务期限内均可享受Web 支持和罗倍拓技术支持服务。如果产品发生故障， 客户可以直接通过互联网登录罗倍拓网站服务专区，搜索查询专项产品服务或通知罗倍拓为客户上门提供技术人员和所需部件。上门支持服务将在客户提出服务请求的国家和地区内提供，且限于有能力提供客户所购产品和部件的国家和地区。
+    具体服务年限请见报价单，该期限过后的在线支持服务需要根据罗倍拓服务条款确定，如需另行付费， 罗倍拓将在第一时间通知客户。尽管存在服务年限的规定，易损件、电池和其他等罗倍拓耗材和附件按照特定的支持服务进行。
+		</div>
+		</li>
+			<li><%= image_tag "image-ico/xiuli.png" %>
+		<h3>我们的售后团队</h3><hr>
+		<div class="context">
+			ROBT拥有健全、完善的技术服务制度和检查制度，并有专业的维保工程师，为您的项目进行现场指导并监督，免去您对于产品维保的后顾之忧。
+    •维保工程师会对产品进行系统、全面的检查，严格审核产品使用状况和问题。
+    •我们严格执行安全操作规程，遵守安全管理制度，并由维保工程师定期对客户维保人员进行安全上岗和操作技能、安全、服务利益等各项培训，科学规范维保工作流程，提高效率，保证日后的维保质量。
+    •维保工程师定期填写《维修保养周期表》，并向客户明确产品报修及投诉电话，接到报修电话后，维保工程师会第一时间赶赴现场。江浙沪地区24小时内，其它地区48小时。
+		</div>
+		</li>
+	</div>
+	<div class="footer-list">
+		<li><%= image_tag "image-ico/about.png" %>
+	<h3>关于罗倍拓</h3><hr>
+	<div class="context">
+			ROBT 为英文Rotary-Better组合的缩写，Rotary意为旋转的，不停止；Better意为更好的，这也正诠释了ROBT工业的企业精神，那就是：只有不停地前进，才能做到更好！上海罗倍拓工业设备有限公司的中文名称，也同样诠释了，只有加倍开拓，才能做到更好的企业精神。
+物料搬运机械的真正发源地起源于北欧，全球最领先的智能化物流与物料输送解决方案的集成商及服务商，都集中于此，几十年以，这些企业一直致力于服务ATLET BT EAB等享誉全球的电动叉车公司，并在世界各地为大量的工业领域客户提供产品和服务支持，在欧洲、美洲市场拥有极高的市场份额和良好口碑。
+
+	</div>
+	</li>
+		<li><%= image_tag "image-ico/dongtai.png" %>
+	<h3>我们的未来</h3><hr>
+	<div class="context">
+ROBT自进入中国市场以来，对于未来一直抱持着一个愿景，以优异的制造专长和领先的研发技术，致力于效率和安全的需要，做物料搬运设备的行业领导者，并将ROBT打造成中国MRO行业一流品牌，并不断向专业系统化方向迈进。为客户提供科学的解决方案，并不断优化，帮助客户在各领域创造更大的价值。ROBT与中国一起健康、稳健地发展，不论在我们的业务领域，还是在社会公众生活方面，ROBT都是不可或缺的一部分，承担着应尽的责任和义务。		
+	</div>
+	</li>
+	</div>
+	</ul>
+
 </div>
 <div class="bottomer">
 </div>

@@ -1,0 +1,7 @@
+zh-CN:
+  layouts:
+    application: 
+      home: "首页" 
+      products: "产品中心"
+      server: "服务中心"
+      about: "关于我们"
