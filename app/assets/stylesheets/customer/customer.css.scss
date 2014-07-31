@@ -31,10 +31,12 @@
 .home {
 	width: 100%;
 	height: auto;
+	float: left;
 	border: 1px solid #fff;
 	.header-top {
 		float: left;
 		width: 100%;
+		border-bottom: 1px solid #909090;
 		#myCarousel {
 			float: left;
 			width: 73%;
@@ -43,8 +45,8 @@
 			margin-bottom: 0;
 		}
 		.carousel-indicators {
-			top: 280px;
-			left: 380px;
+			top: 93%;
+			left: 50%;
 			li {
 				background-color: blue;
 				width: 12px;
@@ -57,28 +59,35 @@
 		.login-interface {
 			float: right;
 			width: 25%;
-			height: 300px;
+			height: auto;
 			background: white;
+			.user-name, .password-text{
+				width: 100%;
+				float: left;
+			}
 			.login-btn {
+				clear: both;
 				text-align: center;
 				padding: 5px;
 				.btn {
 					margin-left: 10px;
 				}
 			}
-			h2 {
+			h3 {
 				text-align: center;
+				margin: 0;
+				padding: 5px;
 			}
 			form {
 				float: left;
-				padding: 5px;
+				margin: 0;
 				label {
-					margin: 4px 0 0 15px;
-					width: 60px;
+					width: 25%;
 					float: left;
 					font-size: 16px;
 				}
 				input {
+					width: 60%;
 					margin-bottom: 20px;
 					float: left;
 				}
@@ -89,7 +98,6 @@
 		clear: both;
 		width: 100%;
 		margin: 5px 0;
-		border-top: 1px solid #909090;
 		float: left;
 		ul {
 			list-style: none;
@@ -139,6 +147,7 @@
 	}
 }
 .footer {
+	clear: both;
 	border-top: 1px solid #909090;
 	.copy-right{
 		padding: 5px;
